@@ -65,7 +65,6 @@
         document.getElementById("app-section").style.display = "block";
         document.getElementById("user-info").textContent = `Logged in as ${user.email}`;
         loadEntries(user.uid);
-        console.log("Your UID:", user.uid); // Copy this for Firestore rules
       } else {
         document.getElementById("auth-section").style.display = "block";
         document.getElementById("app-section").style.display = "none";
